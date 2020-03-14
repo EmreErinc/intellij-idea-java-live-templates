@@ -1,0 +1,15 @@
+package ${PACKAGE_NAME}.controller;
+
+import ${PACKAGE_NAME}.service.${StringUtils.capitalizeFirstLetter(${NAME})}Service;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping(value = "/${NAME}")
+public class ${StringUtils.capitalizeFirstLetter(${NAME})}Controller {
+    private ${StringUtils.capitalizeFirstLetter(${NAME})}Service ${NAME}Service;
+    
+    public ${StringUtils.capitalizeFirstLetter(${NAME})}Controller(${StringUtils.capitalizeFirstLetter(${NAME})}Service ${NAME}Service) {
+        this.${NAME}Service = ${NAME}Service;
+    }
+}

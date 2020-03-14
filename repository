@@ -1,0 +1,4 @@
+package ${PACKAGE_NAME}.repository;
+
+public interface ${StringUtils.capitalizeFirstLetter(${NAME})}Repository {
+}

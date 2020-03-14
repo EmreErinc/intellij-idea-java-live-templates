@@ -1,0 +1,16 @@
+package ${PACKAGE_NAME}.service.impl;
+
+import org.springframework.context.annotation.Configuration;
+import ${PACKAGE_NAME}.service.${StringUtils.capitalizeFirstLetter(${NAME})}Service;
+import ${PACKAGE_NAME}.repository.${StringUtils.capitalizeFirstLetter(${NAME})}Repository;
+
+@Configuration
+public class ${StringUtils.capitalizeFirstLetter(${NAME})}ServiceImpl implements ${StringUtils.capitalizeFirstLetter(${NAME})}Service {
+
+  private ${StringUtils.capitalizeFirstLetter(${NAME})}Repository ${NAME}Repository;
+
+  public ${StringUtils.capitalizeFirstLetter(${NAME})}ServiceImpl(${StringUtils.capitalizeFirstLetter(${NAME})}Repository ${NAME}Repository) {
+    this.${NAME}Repository = ${NAME}Repository;
+  }
+
+}

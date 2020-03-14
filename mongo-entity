@@ -1,0 +1,21 @@
+package ${PACKAGE_NAME}.model.entity;
+    
+import lombok.extern.slf4j.Slf4j;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
+import lombok.Value;
+import java.util.UUID;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Slf4j
+@Builder
+@Value
+@Document(collection = "${NAME}")
+@AllArgsConstructor
+@NoArgsConstructor(force = true)
+public class ${StringUtils.capitalizeFirstLetter(${NAME})}Entity{
+    @Id
+    private UUID id;
+}

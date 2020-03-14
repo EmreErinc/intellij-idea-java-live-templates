@@ -1,0 +1,4 @@
+package ${PACKAGE_NAME}.service;
+
+public interface ${StringUtils.capitalizeFirstLetter(${NAME})}Service {
+}

@@ -1,0 +1,10 @@
+package ${PACKAGE_NAME}.repository.impl;
+
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.context.annotation.Configuration; 
+import ${PACKAGE_NAME}.repository.${StringUtils.capitalizeFirstLetter(${NAME})}Repository;
+
+@Slf4j
+@Configuration
+public class ${StringUtils.capitalizeFirstLetter(${NAME})}RepositoryImpl implements ${StringUtils.capitalizeFirstLetter(${NAME})}Repository {
+}
