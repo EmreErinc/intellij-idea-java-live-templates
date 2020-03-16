@@ -1,0 +1,4 @@
+@PostMapping()
+public Response<> post(@RequestHeader HttpHeaders headers) {
+    return new Response<>();
+}

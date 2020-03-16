@@ -1,0 +1,4 @@
+@PutMapping(path = "/")
+public Response<> put(@RequestHeader HttpHeaders headers) {
+    return new Response<>();
+}

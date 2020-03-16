@@ -1,0 +1,4 @@
+@GetMapping(path = "/")
+public Response<> get(@RequestHeader HttpHeaders headers) {
+    return new Response<>();
+}
